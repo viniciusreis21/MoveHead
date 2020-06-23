@@ -39,7 +39,6 @@ int main(int argc, char **argv)
   //fazer com que ela volte para 0 rad no tempo = 4s (2 seg ate 1 rad e mais 2 seg do 1rad até o 0)  
   motion.angleInterpolation(names, angleLists, timeLists, isAbsolute); // Função para interpolar
 
- // qi::os::sleep(1.0f);
 
   // Voltando o stiffness da junta Head para 0
   motion.setStiffnesses("Head", 0.0f);
