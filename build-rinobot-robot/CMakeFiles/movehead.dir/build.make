@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viniciusreis/Downloads/MoveHead/MoveHead
+CMAKE_SOURCE_DIR = /home/viniciusreis/Documentos/MoveHead
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot
+CMAKE_BINARY_DIR = /home/viniciusreis/Documentos/MoveHead/build-rinobot-robot
 
 # Include any dependencies generated for this target.
 include CMakeFiles/movehead.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/movehead.dir/flags.make
 
 CMakeFiles/movehead.dir/movehead.cpp.o: CMakeFiles/movehead.dir/flags.make
 CMakeFiles/movehead.dir/movehead.cpp.o: ../movehead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/movehead.dir/movehead.cpp.o"
-	/home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/movehead.dir/movehead.cpp.o -c /home/viniciusreis/Downloads/MoveHead/MoveHead/movehead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/movehead.dir/movehead.cpp.o"
+	/home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/movehead.dir/movehead.cpp.o -c /home/viniciusreis/Documentos/MoveHead/movehead.cpp
 
 CMakeFiles/movehead.dir/movehead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/movehead.dir/movehead.cpp.i"
-	/home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viniciusreis/Downloads/MoveHead/MoveHead/movehead.cpp > CMakeFiles/movehead.dir/movehead.cpp.i
+	/home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viniciusreis/Documentos/MoveHead/movehead.cpp > CMakeFiles/movehead.dir/movehead.cpp.i
 
 CMakeFiles/movehead.dir/movehead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/movehead.dir/movehead.cpp.s"
-	/home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viniciusreis/Downloads/MoveHead/MoveHead/movehead.cpp -o CMakeFiles/movehead.dir/movehead.cpp.s
+	/home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viniciusreis/Documentos/MoveHead/movehead.cpp -o CMakeFiles/movehead.dir/movehead.cpp.s
 
 CMakeFiles/movehead.dir/movehead.cpp.o.requires:
 
@@ -90,28 +90,28 @@ movehead_EXTERNAL_OBJECTS =
 
 sdk/bin/movehead: CMakeFiles/movehead.dir/movehead.cpp.o
 sdk/bin/movehead: CMakeFiles/movehead.dir/build.make
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalproxies.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalcommon.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_signals-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/librttools.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalvalue.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalerror.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libqimessaging.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libqitype.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libqi.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_chrono-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_filesystem-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_program_options-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_regex-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/usr/lib/libdl.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/usr/lib/librt.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_date_time-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_system-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_locale-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_thread-mt-1_55.so
-sdk/bin/movehead: /home/viniciusreis/Downloads/Mari-Assets/sdk/ctc-linux64-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/usr/lib/libpthread.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalproxies.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalcommon.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_signals-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/librttools.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalvalue.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libalerror.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libqimessaging.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libqitype.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/libnaoqi/lib/libqi.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_chrono-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_filesystem-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_program_options-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_regex-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/usr/lib/libdl.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/usr/lib/librt.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_date_time-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_system-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_locale-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/boost/lib/libboost_thread-mt-1_55.so
+sdk/bin/movehead: /home/viniciusreis/Downloads/Mari/sdk/ctc-linux64-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/usr/lib/libpthread.so
 sdk/bin/movehead: CMakeFiles/movehead.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sdk/bin/movehead"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sdk/bin/movehead"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/movehead.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/movehead.dir/clean:
 .PHONY : CMakeFiles/movehead.dir/clean
 
 CMakeFiles/movehead.dir/depend:
-	cd /home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viniciusreis/Downloads/MoveHead/MoveHead /home/viniciusreis/Downloads/MoveHead/MoveHead /home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot /home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot /home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/movehead.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viniciusreis/Documentos/MoveHead/build-rinobot-robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viniciusreis/Documentos/MoveHead /home/viniciusreis/Documentos/MoveHead /home/viniciusreis/Documentos/MoveHead/build-rinobot-robot /home/viniciusreis/Documentos/MoveHead/build-rinobot-robot /home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/movehead.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/movehead.dir/depend
 

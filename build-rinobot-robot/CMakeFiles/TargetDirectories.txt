@@ -1,7 +1,7 @@
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/install.dir
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/list_install_components.dir
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/rebuild_cache.dir
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/movehead.dir
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/install/strip.dir
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/install/local.dir
-/home/viniciusreis/Downloads/MoveHead/MoveHead/build-rinobot-robot/CMakeFiles/edit_cache.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/install.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/list_install_components.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/rebuild_cache.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/movehead.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/install/strip.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/install/local.dir
+/home/viniciusreis/Documentos/MoveHead/build-rinobot-robot/CMakeFiles/edit_cache.dir

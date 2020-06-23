@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv)
 {
-  std::string robotIp = "127.0.0.1";
+  std::string robotIp = "127.0.0.1"; // Conecta ao Robô pelo ip Padrao local 127.0.0.1
 
   if (argc < 2) {
     std::cerr << "Usage: almotion_angleinterpolation robotIp "
@@ -14,58 +14,34 @@ int main(int argc, char **argv)
     robotIp = argv[1];
   }
 
-  AL::ALMotionProxy motion(robotIp);
+  AL::ALMotionProxy motion(robotIp); // Cria uma classe motion (como se fosse a classe do NAO),
+  // onde o passa o ip padrao para o construtor
 
-  // Setting head stiffness on.
-  motion.setStiffnesses("Head", 1.0f);
+  // A partir dessa motion, nos temos as funções da NAOqi que qremos que o robô faça
+  motion.setStiffnesses("Head", 1.0f); // Colocando a joint(Head) energizada (stfiness igual a 1)
 
-  // Example showing a single target angle for one joint
-  // Interpolates the head yaw to 1.0 radian in 1.0 second
-  AL::ALValue names      = "HeadYaw";
-  AL::ALValue angleLists = 1.0f;
-  AL::ALValue timeLists  = 2.0f;
-  bool isAbsolute        = true;
-  std::cout << "Step 1: single target angle for one joint" << std::endl;
-  motion.angleInterpolation(names, angleLists, timeLists, isAbsolute);
-
-  qi::os::sleep(1.0f);
-
-  // Example showing a single trajectory for one joint
-  // Interpolates the head yaw to 1.0 radian and back to zero in 2.0 seconds
-  names      = "HeadYaw";
+// Exemplo irá mostrar um movimento de ângulo fixo para uma junta
+// OBS: A junta "Head" tem dois tipos de movimento: HeadYaw e HeadPitch
+// Nesse exemplo, iremos interpolar o movimento HeadYaw para 1,0 radiano em 2,0 segundos e 
+// depois voltar para a posição 0 em 2 seg
+  AL::ALValue angleLists; // Declarando minhas variáveis que irei utilizar
+  AL::ALValue timeLists;
+  AL::ALValue names      = "HeadYaw"; // Nome do meu movimento
+  bool isAbsolute = true; 
   angleLists.clear();
-  angleLists = AL::ALValue::array(1.0f, 0.0f);
+  angleLists = AL::ALValue::array(1.0f, 0.0f); // Criando um array para os meus dois angulos que quero
   timeLists.clear();
-  timeLists  = AL::ALValue::array(2.0f, 4.0f);
+  timeLists  = AL::ALValue::array(2.0f, 4.0f); // Os dois tempos que quero 
   isAbsolute = true;
-  std::cout << "Step 2: single trajectory for one joint" << std::endl;
-  motion.angleInterpolation(names, angleLists, timeLists, isAbsolute);
+  std::cout << "Uma trajetoria para uma junta" << std::endl;
+  //Agora vamos interpolar os nossos angulos com o tempo, ou seja:
+  //Ele irá fazer com que a cabeça gire até 1 rad em 2 seg e depois
+  //fazer com que ela volte para 0 rad no tempo = 4s (2 seg ate 1 rad e mais 2 seg do 1rad até o 0)  
+  motion.angleInterpolation(names, angleLists, timeLists, isAbsolute); // Função para interpolar
 
-  qi::os::sleep(1.0f);
+ // qi::os::sleep(1.0f);
 
-  // Example showing multiple trajectories
-  // Interpolates the HeadYaw to 1.0 radian and back to zero in 2.0 seconds
-  // while interpolating HeadPitch up and down over a longer period.
-  names = AL::ALValue::array("HeadYaw", "HeadPitch");
-  // Each joint can have lists of different lengths, but the number of
-  // angles and the number of times must be the same for each joint.
-  // Here, the second joint ("HeadPitch") has three angles, and
-  // three corresponding times.
-  angleLists.clear();
-  angleLists.arraySetSize(2);
-  angleLists[0] = AL::ALValue::array(1.0f, 0.0f);
-  angleLists[1] = AL::ALValue::array(-0.5f, 0.5f, 0.0f);
-
-  timeLists.clear();
-  timeLists.arraySetSize(2);
-  timeLists[0] = AL::ALValue::array(2.0f, 4.0f);
-  timeLists[1] = AL::ALValue::array(2.0f, 4.0f, 6.0f);
-
-  isAbsolute = true;
-  std::cout << "Step 3: multiple trajectories" << std::endl;
-  motion.angleInterpolation(names, angleLists, timeLists, isAbsolute);
-
-  // Setting head stiffness off.
+  // Voltando o stiffness da junta Head para 0
   motion.setStiffnesses("Head", 0.0f);
 
   return 0;
